@@ -233,7 +233,7 @@ function flag_dialog_process_form_result($form, $form_state, $flag, $content_id)
       _flag_dialog_set_drupal_path($target);
       menu_execute_active_handler($target);
       drupal_exit();
-      // @todo: An alternative is to do a roundtrip using dialog_command_boxed_redirect()
+      // An alternative is to do a roundtrip using dialog_command_boxed_redirect()
       // See http://drupal.org/node/XXXX
     }
     else {

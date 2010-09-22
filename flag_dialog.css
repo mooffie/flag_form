@@ -1,0 +1,10 @@
+/**
+ * Handles a Drupal bug: the CSS for the throbber messes up the buttons.
+ * See also http://drupal.org/node/769936
+ */
+#dialog .form-actions .progress-disabled, #dialog .form-actions .ajax-progress {
+  float: none !important;
+}
+#dialog .form-actions div.ajax-progress-throbber {
+  display: inline-block !important;
+}

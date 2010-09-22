@@ -1,0 +1,6 @@
+name = Flag form
+description = Provides a form for filling-out fields attached to flags.
+core = 7.x
+package = Flags
+files[] = flag_form.module
+dependencies[] = flag

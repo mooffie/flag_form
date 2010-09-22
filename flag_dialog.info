@@ -1,0 +1,7 @@
+name = Flag dialog
+description = Makes the flag form show in a dialog box.
+core = 7.x
+package = Flags
+files[] = flag_dialog.module
+dependencies[] = flag_form
+dependencies[] = dialog

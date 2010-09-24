@@ -14,19 +14,12 @@
  * widget. jQuery UI is shipped with D7. This module also necessitates the
  * <em>Dialog API</em> module, which provides a thin layer of supporting code.
  *
- * <h3>The disadvantage of the AJAX method</h3>
- *
- * @todo: the following explanation is flawed.
- *
- * A problem with the AJAX method comes to light when further JavaScript code
- * needs to be fetched and executed. It is executed in the context of the
- * "parent" document (which is the only document) and sometimes this clashes
- * with code run previously. Since Drupal's various JavaScript code hasn't been
- * tested in this scenario (see http://drupal.org/node/561858), there exist
- * some bugs with some widgets. Most widgets (resize grips, drag handles) work
- * flawlessly, but a few may have little glitches.
- *
  * <h3>Alternatives</h3>
+ *
+ * The AJAX method is not as robust as the IFRAME one: the additional "magic" it
+ * involves may not be fully compatible with the JavaScript of the widgets shown
+ * in the dialog (search flag_dialog.js for "@todo" comments to learn about known
+ * problems).
  *
  * We should eventually provide another module (or replace this one?) implementing
  * the "other method", of using an IFRAME. At the time of this writing it seems

@@ -190,7 +190,7 @@ function flag_form_flag_link($flag, $action, $content_id) {
     $op = 'create';
   }
   else {
-    $op = $flag->form_unflag_link_leads_to_edit ? 'edit' : 'delete';
+    $op = !empty($flag->form_unflag_link_leads_to_edit) ? 'edit' : 'delete';
   }
   $link = array(
     'href' => 'flag/flagging/' . $flag->name . '/' . $content_id . '/' . $op,
